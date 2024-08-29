@@ -2,38 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navBar">
-        <i class="fa-brands fa-apple"></i>
-        <p>Store</p>
-        <p>Mac</p>
-        <p>iPad</p>
-        <p>iPhone</p>
-        <p>Watch</p>
-        <p>Vision</p>
-        <p>AirPods</p>
-        <p>TV & Home</p>
-        <p>Entertainment</p>
-        <p>Accessories</p>
-        <p>Support</p>
-        <i class="fa-solid fa-search"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
-    </nav>
+<div class="first-div">
+    <p>
+        Choose another country or region to see content specific to your location.
+    </p>
+    <div>
+        <select>
+            <option>Nigeria</option>
+            <option>Other country or region</option>
+        </select>
+        <button>Continue</button>
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+</div>
+<nav class="navBar">
+    <i class="fa-brands fa-apple"></i>
+    <p>Store</p>
+    <p>Mac</p>
+    <p>iPad</p>
+    <p>iPhone</p>
+    <p>Watch</p>
+    <p>Vision</p>
+    <p>AirPods</p>
+    <p>TV & Home</p>
+    <p>Entertainment</p>
+    <p>Accessories</p>
+    <p>Support</p>
+    <i class="fa-solid fa-search"></i>
+    <i class="fa-solid fa-bag-shopping"></i>
+</nav>
 
-    <section class="hero">
-        <video controls loop muted width="30%" height="650vh">
+<section class="hero">
+    <div class="videoDiv">
+        <video id="myVideo" width="100%">
             <source src="../Assets/large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
-        <p>Apple Event</p>
-        <p>Watch online on 9/9 at 10 a.m. PT.</p>
-        <button>Learn More</button>
-    </section>
+        <div class="event-div">
+            <p class="event">Apple Event</p>
+            <p class="watch">Watch online on 9/9 at 10 a.m. PT.</p>
+            <button class="learn-moreBtn">Learn More</button>
+        </div>
+    </div>
+    <div id="play-pause-btn" class="custom-play-button">
+        <i class="fas fa-play"></i>
+    </div>
+</section>
+
+<script src="index.js"></script>
 </body>
 </html>
