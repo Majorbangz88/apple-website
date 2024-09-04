@@ -13,7 +13,9 @@ html, body {
     gap: 140px;
     padding: 15px 0;
     top: 0;
-    /*position: fixed;*/
+    position: sticky;
+    z-index: 1;
+    align-self: stretch;
 
     > p {
         color: white;
@@ -64,14 +66,13 @@ html, body {
     align-items: center;
     gap: 40px;
     background-color: rgb(24, 24, 24);
+    opacity: 0.9;
     color: rgb(209, 209, 209);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding: 6px 0;
     position: fixed;
-    /*top: 40px;*/
     width: 100%;
-    z-index: 2;
 }
 
 .navBar > i {
@@ -90,12 +91,10 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     padding: 0 20px;
 }
 
 .videoDiv {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,8 +104,6 @@ html, body {
 #myVideo {
     width: 100%;
     height: 70vh;
-    z-index: 1;
-    position: relative;
 }
 
 .event-div {
@@ -114,30 +111,27 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 75%;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    /*transform: translate(0, -100%);*/
+    /*z-index: 2;*/
+    margin-top: -21%;
     color: white;
     gap: 10px;
 
     > p {
         color: rgb(245,245,247);
         font-family: Arial, Helvetica, sans-serif;
-        /*font-weight: calc();*/
         margin: 0;
     }
 }
 
-.event {
+.event, .iphone {
     font-size: 55px;
     font-weight: bold;
 }
 
-.watch {
-    font-size: 30px;
+.watch, .features {
+    font-size: 28px;
 }
 
 .learn-moreBtn {
@@ -154,6 +148,7 @@ html, body {
 .custom-play-button {
     display: flex;
     align-self: flex-end;
+    cursor: pointer;
 
     > i {
         color: white;
@@ -178,4 +173,33 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     cursor: pointer;
+    background: none;
+}
+
+.shop-iphone {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 0 0 ;
+    gap: 20px;
+}
+
+.iphone, .features {
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.features-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.iphone-img {
+    width: 40%;
+    margin-top: 50px;
 }
