@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -202,4 +204,101 @@ html, body {
 .iphone-img {
     width: 40%;
     margin-top: 50px;
+}
+
+.shop-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-gap: 10px;
+    padding: 10px 0;
+}
+
+.shop-elements, .shop-elements-2 {
+    padding: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    gap: 10px;
+}
+
+.shop-elements {
+    background-color: rgb(245,245,247);
+}
+
+.shop-elements-2 {
+    background-color: black;
+}
+
+.macbook-shop, .lean, .iPad, .thin,
+.intelligence, .ai, .beta, .watch-shop,
+.series, .watch-feature, .card, .discount,
+.trade-in, .rebate {
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.macbook-shop, .iPad, .intelligence,
+.card, .trade-in {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.iPad, .watch-shop {
+    color: white;
+}
+
+.watch-shop {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.lean, .thin, .ai, .series,
+.watch-feature, .discount, .rebate {
+    font-size: 22px;
+}
+
+.beta {
+    font-size: 19px;
+    opacity: 0.6;
+}
+
+.shop-section-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.shop-learn-moreBtn {
+    background-color: rgb(0,113,227);
+    padding: 11px 18px;
+    border-radius: 25px;
+    color: rgb(245,245,247);
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.buy-btn {
+    padding: 11px 18px;
+    border-radius: 25px;
+    border: 1px solid rgb(0,113,227);
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    background: none;
+    color: rgb(0,113,227);
+}
+
+.intelligence-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.phone-hand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
