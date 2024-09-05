@@ -331,3 +331,161 @@ html, body {
 #fa-brand-2, #fa-brand-3 {
     font-size: 33px;
 }
+
+.movies-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bigger-movie-banners, .smaller-movie-banners {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 10px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.smaller-movie-banners {
+    animation: slide 20s linear infinite;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-dots span {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dots .active {
+    background-color: white;
+}
+
+.custom-play-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.custom-play-btn i {
+    color: white;
+    font-size: 20px;
+}
+
+.footnote {
+    background: rgb(245, 245, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 0;
+    flex-direction: column;
+}
+
+.footnote-text {
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    opacity: 0.5;
+    width: 50%;
+    line-height: 15px;
+}
+
+hr {
+    width: 50%;
+    opacity: 0.5;
+}
+
+.footer-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inner-text-div {
+    > p {
+        font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        opacity: 0.6;
+        line-height: 15px;
+    }
+}
+
+h4 {
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.more-ways {
+    display: flex;
+    align-self: flex-start;
+
+    > p {
+        font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        opacity: 0.6;
+    }
+}
+
+.copyright-sec {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.rights-reserved {
+    display: flex;
+    gap: 40px;
+}
+
+.rights-div {
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.privacy {
+    display: flex;
+    gap: 8px;
+
+    > p {
+        font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        opacity: 0.6;
+    }
+}
