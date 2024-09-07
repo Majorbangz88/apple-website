@@ -86,6 +86,10 @@ html, body {
     cursor: pointer;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
 .hero {
     background-color: black;
     height: 80vh;
@@ -101,6 +105,10 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.apple-logo {
+    display: none;
 }
 
 #myVideo {
@@ -263,6 +271,7 @@ html, body {
     color: red;
     font-size: 13px;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .watch-feature {
@@ -310,6 +319,10 @@ html, body {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+}
+
+.apple-intelligence-2 {
+    display: none;
 }
 
 .phone-hand {
@@ -487,5 +500,166 @@ h4 {
         font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 12px;
         opacity: 0.6;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #first-div {
+        display: none;
+    }
+
+    .navBar {
+        display: flex;
+        /*z-index: 1;*/
+        justify-content: flex-start;
+        height: 35px;
+        position: fixed;
+        opacity: 0.7;
+    }
+
+    .navBar > p{
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .hamburger-menu .fa-bars {
+        font-size: 24px;
+    }
+
+    .bar1 {
+        transform: scaleY(0.7);
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .videoDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .apple-logo {
+        display: flex;
+        width: 100%;
+        height: 40vh;
+        transform: scale(1.1);
+    }
+
+    #myVideo {
+        display: none;
+    }
+
+    .event-div{
+        width: 100%;
+        color: white;
+        gap: 10px;
+        z-index: 2;
+
+        > p {
+            color: rgb(245,245,247);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+    }
+
+    .event, .iphone {
+        font-size: 31px;
+        font-weight: bold;
+    }
+
+    .watch, .features {
+        font-size: 18px;
+    }
+
+    .learn-moreBtn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    #play-pause-btn {
+        display: none;
+    }
+
+    .buy-macbook {
+        height: 42vh;
+        gap: 12px;
+    }
+
+    .buy-macbook-img {
+        height: 100%;
+        width: 95%;
+        margin-top: -10px;
+    }
+
+    .shop-btn {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .shop-iphone {
+        height: 50vh;
+        /*gap: 40px;*/
+s
+        > p {
+            margin: 0;
+        }
+    }
+
+    .iphone-img {
+        height: 50%;
+        width: 80%;
+        margin-bottom: -24px;
+    }
+
+    .shop-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .macbook-shop, .iPad, .intelligence,
+    .card, .trade-in {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .shop-learn-moreBtn {
+        padding: 5px 18px;
+    }
+
+    .mac-img {
+        height: 35vh;
+        margin-bottom: 20px;
+    }
+
+    .ipad-img {
+        width: 60%;
+        height: 33vh;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .apple-intelligence-1 {
+        display: none;
+    }
+
+    .apple-intelligence-2 {
+        display: flex;
+        width: 86%;
+        height: 21vh;
+        margin-top: 40px;
+    }
+
+    .shop-elements, .shop-elements-2 {
+        height: 50vh;
     }
 }
