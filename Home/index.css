@@ -759,6 +759,22 @@ h4 {
         flex-direction: column;
     }
 
+    .rights-reserved {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .privacy {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -45px;
+
+        > p {
+            margin: 0;
+        }
+    }
+
     .footer-div-2 {
         display: flex;
         flex-direction: column;
@@ -780,11 +796,22 @@ h4 {
     }
 
     .inner-content {
+        display: none;
+        margin-top: 10px;
 
         > p {
-            display: none;
+            font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            /*font-weight: bold;*/
+            font-size: 12px;
+            opacity: 0.7;
+            margin: 8px;
+
         }
     }
+
+    /*.inner-content.active {*/
+        /*display: flex; !* Show when active *!*/
+    /*}*/
 
     span {
         color: black;
@@ -798,6 +825,18 @@ h4 {
         display: flex;
         width: 100%;
         opacity: 0.5;
+    }
+
+    .more-ways {
+        width: 90%;
+
+        > p {
+            margin: 0;
+        }
+    }
+
+    .fas {
+        font-size: 12px;
     }
 
 

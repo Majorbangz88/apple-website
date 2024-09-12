@@ -3,6 +3,7 @@ const playPauseDiv = document.getElementById('play-pause-btn');
 const cancelBtn = document.getElementById('x-mark');
 const biggerBanners = document.querySelectorAll('.bigger-movie-banners img');
 const dots = document.querySelector('.carousel-dots');
+const footerMenus = document.querySelectorAll('.heading-div');
 
 let currentBigBanner = 0;
 let bigBannerInterval;
@@ -61,9 +62,26 @@ function toggleCarousel() {
     isPlaying = !isPlaying;
 }
 
+function toggleMenu() {
+    const menuItems = this.nextElementSibling;
+    const caretIcon = this.querySelector('i');
+
+    if (getComputedStyle(menuItems).display === 'none') {
+        menuItems.style.display = 'flex';
+        menuItems.style.flexDirection = 'column';
+        caretIcon.className = 'fas fa-angle-up';
+    } else {
+        menuItems.style.display = 'none';
+        caretIcon.className = 'fas fa-angle-down';
+    }
+}
+
 playPauseDiv.addEventListener('click', togglePlay);
 cancelBtn.addEventListener('click', closeFirstDivHandler);
 playPauseDiv.addEventListener('click', toggleCarousel);
+footerMenus.forEach(footerMenu => {
+    footerMenu.addEventListener('click', toggleMenu);
+});
 
 startCarousel();
 updateDots(currentBigBanner);
