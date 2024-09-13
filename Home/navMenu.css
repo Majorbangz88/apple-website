@@ -1,0 +1,61 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+.shop-menu, .explore-mac, .explore-ipad {
+    display: none;
+    background-color: rgb(24, 24, 24);
+    padding: 60px 440px;
+    gap: 50px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.shop-menu.active, .explore-mac.active, .explore-ipad.active {
+    display: flex;
+    transform: translateY(0);
+}
+
+.menu-name, .shop-menu-items,
+.quick-links, .special-stores {
+
+    > p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+}
+
+.menu-name {
+    > p {
+        color: #787878;
+        font-size: 12px;
+    }
+}
+
+.shop-menu-items > p {
+    margin: 10px 0 0;
+    font-size: 22px;
+}
+
+.shop-menu-items, .quick-links, .special-stores {
+
+    > p {
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.quick-links, .special-stores {
+
+    > p {
+        font-size: 12px;
+    }
+}
+
+.other {
+    margin-top: 25px;
+    > p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        color: white;
+    }
+}
+
