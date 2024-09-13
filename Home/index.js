@@ -4,6 +4,9 @@ const cancelBtn = document.getElementById('x-mark');
 const biggerBanners = document.querySelectorAll('.bigger-movie-banners img');
 const dots = document.querySelector('.carousel-dots');
 const footerMenus = document.querySelectorAll('.heading-div');
+const storeBtn = document.querySelector('.storeBtn');
+const macBtn = document.querySelector('.macBtn');
+const ipadBtn = document.querySelector('.iPadBtn');
 
 let currentBigBanner = 0;
 let bigBannerInterval;
@@ -76,12 +79,35 @@ function toggleMenu() {
     }
 }
 
+function toggleShopMenu() {
+    const shopMenu = document.querySelector('.shop-menu');
+    shopMenu.classList.toggle('active');
+}
+
+function toggleMacMenu() {
+    const macMenu = document.querySelector('.explore-mac');
+    macMenu.classList.toggle('active');
+}
+
+function toggleIpadMenu() {
+    const ipadMenu = document.querySelector('.explore-ipad');
+    ipadMenu.classList.toggle('active');
+}
+
 playPauseDiv.addEventListener('click', togglePlay);
 cancelBtn.addEventListener('click', closeFirstDivHandler);
 playPauseDiv.addEventListener('click', toggleCarousel);
 footerMenus.forEach(footerMenu => {
     footerMenu.addEventListener('click', toggleMenu);
 });
+storeBtn.addEventListener('mouseover', toggleShopMenu)
+storeBtn.addEventListener('mouseleave', toggleShopMenu);
+
+macBtn.addEventListener('mouseover', toggleMacMenu);
+macBtn.addEventListener('mouseleave', toggleMacMenu);
+
+ipadBtn.addEventListener('mouseover', toggleIpadMenu);
+ipadBtn.addEventListener('mouseleave', toggleIpadMenu);
 
 startCarousel();
 updateDots(currentBigBanner);
